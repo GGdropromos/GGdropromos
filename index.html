@@ -3,17 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grupo de Promoções</title>
+
+<title>GGdropromos - Promoções</title>
+
+<!-- Ícones oficiais -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
 
 body{
   margin:0;
   min-height:100vh;
   font-family:Arial,Helvetica,sans-serif;
   color:#fff;
-  background:radial-gradient(circle at 50% 0%,#17104a 0%,#090713 42%,#050509 100%);
+  background:
+    radial-gradient(circle at 50% 0%, #17104a 0%, #090713 42%, #050509 100%);
   display:flex;
   justify-content:center;
 }
@@ -22,7 +29,7 @@ body{
   width:100%;
   max-width:720px;
   padding:34px 22px 55px;
-  text-align:center
+  text-align:center;
 }
 
 .logo{
@@ -30,35 +37,37 @@ body{
   height:150px;
   object-fit:cover;
   border-radius:50%;
-  box-shadow:0 0 28px #7b2cff,0 0 55px rgba(0,153,255,.35);
+  box-shadow:
+    0 0 28px #7b2cff,
+    0 0 55px rgba(0,153,255,.35);
   margin:5px auto 25px;
-  display:block
+  display:block;
 }
 
 h1{
   font-size:42px;
   line-height:1.05;
   margin:0 0 13px;
-  font-weight:800
+  font-weight:800;
 }
 
 .sub{
   font-size:20px;
   line-height:1.45;
   color:#d5d0e3;
-  margin:0 auto 9px
+  margin:0 auto 9px;
 }
 
 .small{
   font-size:17px;
   color:#aaa4bb;
-  margin:0 auto 27px
+  margin:0 auto 27px;
 }
 
 .buttons{
   display:flex;
   flex-direction:column;
-  gap:16px
+  gap:16px;
 }
 
 .btn{
@@ -72,94 +81,179 @@ h1{
   color:#fff;
   font-weight:800;
   transition:.18s transform,.18s filter;
-  box-shadow:0 8px 25px rgba(0,0,0,.25)
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
 }
 
 .btn:hover{
   transform:translateY(-2px);
-  filter:brightness(1.08)
+  filter:brightness(1.08);
 }
 
+/* WhatsApp */
 .wa{
-  background:linear-gradient(135deg,#00b84f,#00a83f)
+  background:linear-gradient(135deg,#00b84f,#00a83f);
 }
 
+/* Telegram */
 .tg{
-  background:linear-gradient(135deg,#229ed9,#168dcc)
+  background:linear-gradient(135deg,#229ed9,#168dcc);
 }
 
 .icon{
   font-size:39px;
-  width:48px
+  width:48px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .text{
   flex:1;
   text-align:left;
-  margin-left:10px
+  margin-left:10px;
 }
 
 .title{
-  font-size:21px
+  font-size:21px;
 }
 
 .desc{
   font-size:14px;
   font-weight:500;
   opacity:.85;
-  margin-top:5px
+  margin-top:5px;
 }
 
 .arrow{
   font-size:31px;
-  font-weight:400
+  font-weight:400;
 }
 
 @media(max-width:520px){
-  .page{padding-top:25px}
-  .logo{width:132px;height:132px}
-  h1{font-size:32px}
-  .sub{font-size:17px}
-  .small{font-size:15px}
-  .btn{min-height:78px;padding:14px 17px}
-  .title{font-size:18px}
+
+  .page{
+    padding-top:25px;
+  }
+
+  .logo{
+    width:132px;
+    height:132px;
+  }
+
+  h1{
+    font-size:32px;
+  }
+
+  .sub{
+    font-size:17px;
+  }
+
+  .small{
+    font-size:15px;
+  }
+
+  .btn{
+    min-height:78px;
+    padding:14px 17px;
+  }
+
+  .title{
+    font-size:18px;
+  }
+
+  .icon{
+    font-size:34px;
+    width:43px;
+  }
 }
 </style>
 </head>
 
 <body>
+
 <main class="page">
 
-<img class="logo" src="logo.png" alt="Grupo de Promoções">
+  <img
+    class="logo"
+    src="logo.png"
+    alt="GGdropromos"
+  >
 
-<h1>Descontos e cupons reais<br>todos os dias.</h1>
+  <h1>
+    Descontos e cupons reais<br>
+    todos os dias.
+  </h1>
 
-<p class="sub">Cupons e promoções em tempo real das principais lojas.</p>
+  <p class="sub">
+    Cupons e promoções em tempo real das principais lojas.
+  </p>
 
-<p class="small">Entre no nosso canal e receba as melhores ofertas.</p>
+  <p class="small">
+    Entre no nosso canal e receba as melhores ofertas.
+  </p>
 
-<div class="buttons">
+  <div class="buttons">
 
-<a class="btn wa" href="https://whatsapp.com/channel/0029VbDvrm32phHLPfMhDu3S" target="_blank" rel="noopener">
-<span class="icon">◉</span>
-<span class="text">
-<span class="title">Receber ofertas no WhatsApp</span>
-<span class="desc">Clique para entrar no canal</span>
-</span>
-<span class="arrow">↗</span>
-</a>
+    <!-- WHATSAPP -->
+    <a
+      class="btn wa"
+      href="https://whatsapp.com/channel/0029VbDvrm32phHLPfMhDu3S"
+      target="_blank"
+      rel="noopener"
+    >
 
-<a class="btn tg" href="https://t.me/linkggdropromo" target="_blank" rel="noopener">
-<span class="icon">✈️</span>
-<span class="text">
-<span class="title">Receber ofertas no Telegram</span>
-<span class="desc">Clique para entrar no canal</span>
-</span>
-<span class="arrow">↗</span>
-</a>
+      <span class="icon">
+        <i class="fa-brands fa-whatsapp"></i>
+      </span>
 
-</div>
+      <span class="text">
+        <span class="title">
+          Receber ofertas no WhatsApp
+        </span>
+
+        <span class="desc">
+          Clique para entrar no canal
+        </span>
+      </span>
+
+      <span class="arrow">
+        ↗
+      </span>
+
+    </a>
+
+
+    <!-- TELEGRAM -->
+    <a
+      class="btn tg"
+      href="https://t.me/linkggdropromo"
+      target="_blank"
+      rel="noopener"
+    >
+
+      <span class="icon">
+        <i class="fa-brands fa-telegram"></i>
+      </span>
+
+      <span class="text">
+        <span class="title">
+          Receber ofertas no Telegram
+        </span>
+
+        <span class="desc">
+          Clique para entrar no canal
+        </span>
+      </span>
+
+      <span class="arrow">
+        ↗
+      </span>
+
+    </a>
+
+  </div>
 
 </main>
+
 </body>
-</html>
+          </html>
